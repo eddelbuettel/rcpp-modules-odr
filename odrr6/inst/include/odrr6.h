@@ -56,6 +56,7 @@ namespace Rcpp {
 #include <Rcpp.h>
 #include <RcppBDTdt.h>
 #include <RcppBDTpt.h>
+#include <RcppBDTdd.h>
 #include <RcppBDTdu.h>
 
 #endif

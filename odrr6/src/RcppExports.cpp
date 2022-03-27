@@ -11,6 +11,38 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
+// newDd
+Rcpp::XPtr<bdtDd> newDd();
+RcppExport SEXP _odrr6_newDd() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(newDd());
+    return rcpp_result_gen;
+END_RCPP
+}
+// newDdLong
+Rcpp::XPtr<bdtDd> newDdLong(int l);
+RcppExport SEXP _odrr6_newDdLong(SEXP lSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type l(lSEXP);
+    rcpp_result_gen = Rcpp::wrap(newDdLong(l));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getDays
+long getDays(Rcpp::XPtr<bdtDd> p);
+RcppExport SEXP _odrr6_getDays(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDd> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getDays(p));
+    return rcpp_result_gen;
+END_RCPP
+}
 // newDt
 Rcpp::XPtr<bdtDt> newDt();
 RcppExport SEXP _odrr6_newDt() {
@@ -580,6 +612,9 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_odrr6_newDd", (DL_FUNC) &_odrr6_newDd, 0},
+    {"_odrr6_newDdLong", (DL_FUNC) &_odrr6_newDdLong, 1},
+    {"_odrr6_getDays", (DL_FUNC) &_odrr6_getDays, 1},
     {"_odrr6_newDt", (DL_FUNC) &_odrr6_newDt, 0},
     {"_odrr6_newDtSexp", (DL_FUNC) &_odrr6_newDtSexp, 1},
     {"_odrr6_newDtYMD", (DL_FUNC) &_odrr6_newDtYMD, 3},
