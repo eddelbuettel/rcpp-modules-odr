@@ -423,6 +423,139 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// newPtValue
+Rcpp::XPtr<bdtPt> newPtValue(int yy, int mm, int dd, int hh, int min, int sec, int fracsecs);
+RcppExport SEXP _odrr6_newPtValue(SEXP yySEXP, SEXP mmSEXP, SEXP ddSEXP, SEXP hhSEXP, SEXP minSEXP, SEXP secSEXP, SEXP fracsecsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type yy(yySEXP);
+    Rcpp::traits::input_parameter< int >::type mm(mmSEXP);
+    Rcpp::traits::input_parameter< int >::type dd(ddSEXP);
+    Rcpp::traits::input_parameter< int >::type hh(hhSEXP);
+    Rcpp::traits::input_parameter< int >::type min(minSEXP);
+    Rcpp::traits::input_parameter< int >::type sec(secSEXP);
+    Rcpp::traits::input_parameter< int >::type fracsecs(fracsecsSEXP);
+    rcpp_result_gen = Rcpp::wrap(newPtValue(yy, mm, dd, hh, min, sec, fracsecs));
+    return rcpp_result_gen;
+END_RCPP
+}
+// setFromLocalTimeInSeconds
+Rcpp::XPtr<bdtPt> setFromLocalTimeInSeconds(Rcpp::XPtr<bdtPt> p);
+RcppExport SEXP _odrr6_setFromLocalTimeInSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(setFromLocalTimeInSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// setFromUTCInSeconds
+Rcpp::XPtr<bdtPt> setFromUTCInSeconds(Rcpp::XPtr<bdtPt> p);
+RcppExport SEXP _odrr6_setFromUTCInSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(setFromUTCInSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// setFromLocalTimeInMicroSeconds
+Rcpp::XPtr<bdtPt> setFromLocalTimeInMicroSeconds(Rcpp::XPtr<bdtPt> p);
+RcppExport SEXP _odrr6_setFromLocalTimeInMicroSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(setFromLocalTimeInMicroSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// setFromUTCInMicroSeconds
+Rcpp::XPtr<bdtPt> setFromUTCInMicroSeconds(Rcpp::XPtr<bdtPt> p);
+RcppExport SEXP _odrr6_setFromUTCInMicroSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(setFromUTCInMicroSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// setFromDatetime
+Rcpp::XPtr<bdtPt> setFromDatetime(Rcpp::XPtr<bdtPt> p, SEXP s);
+RcppExport SEXP _odrr6_setFromDatetime(SEXP pSEXP, SEXP sSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type s(sSEXP);
+    rcpp_result_gen = Rcpp::wrap(setFromDatetime(p, s));
+    return rcpp_result_gen;
+END_RCPP
+}
+// setFromDouble
+Rcpp::XPtr<bdtPt> setFromDouble(Rcpp::XPtr<bdtPt> p, double d);
+RcppExport SEXP _odrr6_setFromDouble(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< double >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(setFromDouble(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addHours
+Rcpp::XPtr<bdtPt> addHours(Rcpp::XPtr<bdtPt> p, int h);
+RcppExport SEXP _odrr6_addHours(SEXP pSEXP, SEXP hSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type h(hSEXP);
+    rcpp_result_gen = Rcpp::wrap(addHours(p, h));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addMinutes
+Rcpp::XPtr<bdtPt> addMinutes(Rcpp::XPtr<bdtPt> p, int m);
+RcppExport SEXP _odrr6_addMinutes(SEXP pSEXP, SEXP mSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type m(mSEXP);
+    rcpp_result_gen = Rcpp::wrap(addMinutes(p, m));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addSeconds
+Rcpp::XPtr<bdtPt> addSeconds(Rcpp::XPtr<bdtPt> p, int s);
+RcppExport SEXP _odrr6_addSeconds(SEXP pSEXP, SEXP sSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type s(sSEXP);
+    rcpp_result_gen = Rcpp::wrap(addSeconds(p, s));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addFractionalSeconds
+Rcpp::XPtr<bdtPt> addFractionalSeconds(Rcpp::XPtr<bdtPt> p, int s);
+RcppExport SEXP _odrr6_addFractionalSeconds(SEXP pSEXP, SEXP sSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type s(sSEXP);
+    rcpp_result_gen = Rcpp::wrap(addFractionalSeconds(p, s));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_odrr6_newDt", (DL_FUNC) &_odrr6_newDt, 0},
@@ -461,6 +594,17 @@ static const R_CallMethodDef CallEntries[] = {
     {"_odrr6_showDate", (DL_FUNC) &_odrr6_showDate, 1},
     {"_odrr6_newPt", (DL_FUNC) &_odrr6_newPt, 0},
     {"_odrr6_newPtSexp", (DL_FUNC) &_odrr6_newPtSexp, 1},
+    {"_odrr6_newPtValue", (DL_FUNC) &_odrr6_newPtValue, 7},
+    {"_odrr6_setFromLocalTimeInSeconds", (DL_FUNC) &_odrr6_setFromLocalTimeInSeconds, 1},
+    {"_odrr6_setFromUTCInSeconds", (DL_FUNC) &_odrr6_setFromUTCInSeconds, 1},
+    {"_odrr6_setFromLocalTimeInMicroSeconds", (DL_FUNC) &_odrr6_setFromLocalTimeInMicroSeconds, 1},
+    {"_odrr6_setFromUTCInMicroSeconds", (DL_FUNC) &_odrr6_setFromUTCInMicroSeconds, 1},
+    {"_odrr6_setFromDatetime", (DL_FUNC) &_odrr6_setFromDatetime, 2},
+    {"_odrr6_setFromDouble", (DL_FUNC) &_odrr6_setFromDouble, 2},
+    {"_odrr6_addHours", (DL_FUNC) &_odrr6_addHours, 2},
+    {"_odrr6_addMinutes", (DL_FUNC) &_odrr6_addMinutes, 2},
+    {"_odrr6_addSeconds", (DL_FUNC) &_odrr6_addSeconds, 2},
+    {"_odrr6_addFractionalSeconds", (DL_FUNC) &_odrr6_addFractionalSeconds, 2},
     {NULL, NULL, 0}
 };
 

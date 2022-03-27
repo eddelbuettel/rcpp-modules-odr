@@ -23,7 +23,6 @@ Rcpp::XPtr<bdtDt> newDt() {
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDt> newDtSexp(SEXP s) {
-    Rcpp::print(s);
     Rcpp::XPtr<bdtDt> xp(new bdtDt(s));
     return(xp);
 }

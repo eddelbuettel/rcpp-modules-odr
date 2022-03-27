@@ -145,3 +145,47 @@ newPtSexp <- function(s) {
     .Call(`_odrr6_newPtSexp`, s)
 }
 
+newPtValue <- function(yy, mm, dd, hh, min, sec, fracsecs) {
+    .Call(`_odrr6_newPtValue`, yy, mm, dd, hh, min, sec, fracsecs)
+}
+
+setFromLocalTimeInSeconds <- function(p) {
+    .Call(`_odrr6_setFromLocalTimeInSeconds`, p)
+}
+
+setFromUTCInSeconds <- function(p) {
+    .Call(`_odrr6_setFromUTCInSeconds`, p)
+}
+
+setFromLocalTimeInMicroSeconds <- function(p) {
+    .Call(`_odrr6_setFromLocalTimeInMicroSeconds`, p)
+}
+
+setFromUTCInMicroSeconds <- function(p) {
+    .Call(`_odrr6_setFromUTCInMicroSeconds`, p)
+}
+
+setFromDatetime <- function(p, s) {
+    .Call(`_odrr6_setFromDatetime`, p, s)
+}
+
+setFromDouble <- function(p, d) {
+    .Call(`_odrr6_setFromDouble`, p, d)
+}
+
+addHours <- function(p, h) {
+    .Call(`_odrr6_addHours`, p, h)
+}
+
+addMinutes <- function(p, m) {
+    .Call(`_odrr6_addMinutes`, p, m)
+}
+
+addSeconds <- function(p, s) {
+    .Call(`_odrr6_addSeconds`, p, s)
+}
+
+addFractionalSeconds <- function(p, s) {
+    .Call(`_odrr6_addFractionalSeconds`, p, s)
+}
+
