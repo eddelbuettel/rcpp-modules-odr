@@ -4,13 +4,13 @@
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDd> newDd() {
     Rcpp::XPtr<bdtDd> xp(new bdtDd);
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDd> newDdLong(int l) {
     Rcpp::XPtr<bdtDd> xp(new bdtDd(l));
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]

@@ -18,25 +18,25 @@ namespace Rcpp {
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDt> newDt() {
     Rcpp::XPtr<bdtDt> xp(new bdtDt);
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDt> newDtSexp(SEXP s) {
     Rcpp::XPtr<bdtDt> xp(new bdtDt(s));
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDt> newDtYMD(int y, int m, int d) {
     Rcpp::XPtr<bdtDt> xp(new bdtDt(y, m, d));
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtDt> newDtGregDate(boost::gregorian::date d) {
     Rcpp::XPtr<bdtDt> xp(new bdtDt(d));
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]

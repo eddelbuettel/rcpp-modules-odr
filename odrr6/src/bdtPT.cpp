@@ -26,19 +26,19 @@ namespace Rcpp {
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtPt> newPt() {
     Rcpp::XPtr< bdtPt > xp(new bdtPt);
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtPt> newPtSexp(SEXP s) {
     Rcpp::XPtr< bdtPt > xp(new bdtPt(s));
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
 Rcpp::XPtr<bdtPt> newPtValue(int yy, int mm, int dd, int hh, int min, int sec, int fracsecs) {
     Rcpp::XPtr< bdtPt > xp(new bdtPt(yy,mm,dd,hh,min,sec,fracsecs));
-    return(xp);
+    return xp;
 }
 
 // [[Rcpp::export]]
