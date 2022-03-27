@@ -58,7 +58,7 @@ public:
 
 private:
 
-    static boost::posix_time::time_duration m_td;
+    boost::posix_time::time_duration m_td;
 
     friend bdtDu* arith_bdtDu_bdtDu(  const bdtDu&, const bdtDu&, std::string);
     friend bdtDu* arith_bdtDu_int(    const bdtDu&, const int,    std::string);

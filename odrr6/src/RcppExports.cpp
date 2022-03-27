@@ -434,6 +434,203 @@ BEGIN_RCPP
     return R_NilValue;
 END_RCPP
 }
+// newDu
+Rcpp::XPtr<bdtDu> newDu(int h, int m, int s, int fs);
+RcppExport SEXP _odrr6_newDu(SEXP hSEXP, SEXP mSEXP, SEXP sSEXP, SEXP fsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type h(hSEXP);
+    Rcpp::traits::input_parameter< int >::type m(mSEXP);
+    Rcpp::traits::input_parameter< int >::type s(sSEXP);
+    Rcpp::traits::input_parameter< int >::type fs(fsSEXP);
+    rcpp_result_gen = Rcpp::wrap(newDu(h, m, s, fs));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getHours
+long getHours(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getHours(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getHours(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getMinutes
+long getMinutes(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getMinutes(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getMinutes(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getSeconds
+long getSeconds(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getTotalSeconds
+long getTotalSeconds(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getTotalSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getTotalSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getTotalMilliSeconds
+long getTotalMilliSeconds(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getTotalMilliSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getTotalMilliSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getTotalMicroSeconds
+long getTotalMicroSeconds(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getTotalMicroSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getTotalMicroSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getTotalNanoSeconds
+long getTotalNanoSeconds(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getTotalNanoSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getTotalNanoSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getFractionalSeconds
+int getFractionalSeconds(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getFractionalSeconds(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getFractionalSeconds(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getTicksPerSecond
+long getTicksPerSecond(Rcpp::XPtr<bdtDu> p);
+RcppExport SEXP _odrr6_getTicksPerSecond(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getTicksPerSecond(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addHoursDu
+Rcpp::XPtr<bdtDu> addHoursDu(Rcpp::XPtr<bdtDu> p, int d);
+RcppExport SEXP _odrr6_addHoursDu(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(addHoursDu(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addMinutesDu
+Rcpp::XPtr<bdtDu> addMinutesDu(Rcpp::XPtr<bdtDu> p, int d);
+RcppExport SEXP _odrr6_addMinutesDu(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(addMinutesDu(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addSecondsDu
+Rcpp::XPtr<bdtDu> addSecondsDu(Rcpp::XPtr<bdtDu> p, int d);
+RcppExport SEXP _odrr6_addSecondsDu(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(addSecondsDu(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addMilliSeconds
+Rcpp::XPtr<bdtDu> addMilliSeconds(Rcpp::XPtr<bdtDu> p, int d);
+RcppExport SEXP _odrr6_addMilliSeconds(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(addMilliSeconds(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addMicroSeconds
+Rcpp::XPtr<bdtDu> addMicroSeconds(Rcpp::XPtr<bdtDu> p, int d);
+RcppExport SEXP _odrr6_addMicroSeconds(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(addMicroSeconds(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// addNanoSeconds
+Rcpp::XPtr<bdtDu> addNanoSeconds(Rcpp::XPtr<bdtDu> p, int d);
+RcppExport SEXP _odrr6_addNanoSeconds(SEXP pSEXP, SEXP dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< int >::type d(dSEXP);
+    rcpp_result_gen = Rcpp::wrap(addNanoSeconds(p, d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getAddedPosixtime
+Rcpp::Datetime getAddedPosixtime(Rcpp::XPtr<bdtDu> p, SEXP ptsexp);
+RcppExport SEXP _odrr6_getAddedPosixtime(SEXP pSEXP, SEXP ptsexpSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtDu> >::type p(pSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type ptsexp(ptsexpSEXP);
+    rcpp_result_gen = Rcpp::wrap(getAddedPosixtime(p, ptsexp));
+    return rcpp_result_gen;
+END_RCPP
+}
 // newPt
 Rcpp::XPtr<bdtPt> newPt();
 RcppExport SEXP _odrr6_newPt() {
@@ -649,6 +846,23 @@ static const R_CallMethodDef CallEntries[] = {
     {"_odrr6_addYears", (DL_FUNC) &_odrr6_addYears, 2},
     {"_odrr6_setIMMDate", (DL_FUNC) &_odrr6_setIMMDate, 3},
     {"_odrr6_showDate", (DL_FUNC) &_odrr6_showDate, 1},
+    {"_odrr6_newDu", (DL_FUNC) &_odrr6_newDu, 4},
+    {"_odrr6_getHours", (DL_FUNC) &_odrr6_getHours, 1},
+    {"_odrr6_getMinutes", (DL_FUNC) &_odrr6_getMinutes, 1},
+    {"_odrr6_getSeconds", (DL_FUNC) &_odrr6_getSeconds, 1},
+    {"_odrr6_getTotalSeconds", (DL_FUNC) &_odrr6_getTotalSeconds, 1},
+    {"_odrr6_getTotalMilliSeconds", (DL_FUNC) &_odrr6_getTotalMilliSeconds, 1},
+    {"_odrr6_getTotalMicroSeconds", (DL_FUNC) &_odrr6_getTotalMicroSeconds, 1},
+    {"_odrr6_getTotalNanoSeconds", (DL_FUNC) &_odrr6_getTotalNanoSeconds, 1},
+    {"_odrr6_getFractionalSeconds", (DL_FUNC) &_odrr6_getFractionalSeconds, 1},
+    {"_odrr6_getTicksPerSecond", (DL_FUNC) &_odrr6_getTicksPerSecond, 1},
+    {"_odrr6_addHoursDu", (DL_FUNC) &_odrr6_addHoursDu, 2},
+    {"_odrr6_addMinutesDu", (DL_FUNC) &_odrr6_addMinutesDu, 2},
+    {"_odrr6_addSecondsDu", (DL_FUNC) &_odrr6_addSecondsDu, 2},
+    {"_odrr6_addMilliSeconds", (DL_FUNC) &_odrr6_addMilliSeconds, 2},
+    {"_odrr6_addMicroSeconds", (DL_FUNC) &_odrr6_addMicroSeconds, 2},
+    {"_odrr6_addNanoSeconds", (DL_FUNC) &_odrr6_addNanoSeconds, 2},
+    {"_odrr6_getAddedPosixtime", (DL_FUNC) &_odrr6_getAddedPosixtime, 2},
     {"_odrr6_newPt", (DL_FUNC) &_odrr6_newPt, 0},
     {"_odrr6_newPtSexp", (DL_FUNC) &_odrr6_newPtSexp, 1},
     {"_odrr6_newPtValue", (DL_FUNC) &_odrr6_newPtValue, 7},

@@ -9,7 +9,7 @@ bdtDd <- R6Class("bdtDd",
                         } else if (n == 1) {
                             private$dd <- newDdLong(...)
                         } else {
-                            stop("Wrong number of argument in bdtDt constructor")
+                            stop("Wrong number of argument in constructor")
                         }
                      },
                      getDays = function() { getDays(private$dd) }

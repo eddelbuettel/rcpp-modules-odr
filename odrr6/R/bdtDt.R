@@ -12,7 +12,7 @@ bdtDt <- R6Class("bdtDt",
                         } else if (n == 3) {
                             private$dt <- newDtYMD(...);
                         } else {
-                            stop("Wrong number of argument in bdtDt constructor")
+                            stop("Wrong number of argument in constructor")
                         }
                      },
                      getLocalDay         = function() { getLocalDay(private$dt) },

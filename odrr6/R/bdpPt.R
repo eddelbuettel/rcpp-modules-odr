@@ -11,7 +11,7 @@ bdtPt <- R6Class("bdtPt",
                         } else if (n == 7) {
                             private$pt <- newDtValue(...);
                         } else {
-                            stop("Wrong number of argument in bdtPt constructor")
+                            stop("Wrong number of argument in constructor")
                         }
                  	},
                     setFromLocalTimeInSeconds = function() { setFromLocalTimeInSeconds(private$pt) },

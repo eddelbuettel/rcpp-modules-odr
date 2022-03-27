@@ -149,6 +149,74 @@ showDate <- function(p) {
     invisible(.Call(`_odrr6_showDate`, p))
 }
 
+newDu <- function(h = 0L, m = 0L, s = 0L, fs = 0L) {
+    .Call(`_odrr6_newDu`, h, m, s, fs)
+}
+
+getHours <- function(p) {
+    .Call(`_odrr6_getHours`, p)
+}
+
+getMinutes <- function(p) {
+    .Call(`_odrr6_getMinutes`, p)
+}
+
+getSeconds <- function(p) {
+    .Call(`_odrr6_getSeconds`, p)
+}
+
+getTotalSeconds <- function(p) {
+    .Call(`_odrr6_getTotalSeconds`, p)
+}
+
+getTotalMilliSeconds <- function(p) {
+    .Call(`_odrr6_getTotalMilliSeconds`, p)
+}
+
+getTotalMicroSeconds <- function(p) {
+    .Call(`_odrr6_getTotalMicroSeconds`, p)
+}
+
+getTotalNanoSeconds <- function(p) {
+    .Call(`_odrr6_getTotalNanoSeconds`, p)
+}
+
+getFractionalSeconds <- function(p) {
+    .Call(`_odrr6_getFractionalSeconds`, p)
+}
+
+getTicksPerSecond <- function(p) {
+    .Call(`_odrr6_getTicksPerSecond`, p)
+}
+
+addHoursDu <- function(p, d) {
+    .Call(`_odrr6_addHoursDu`, p, d)
+}
+
+addMinutesDu <- function(p, d) {
+    .Call(`_odrr6_addMinutesDu`, p, d)
+}
+
+addSecondsDu <- function(p, d) {
+    .Call(`_odrr6_addSecondsDu`, p, d)
+}
+
+addMilliSeconds <- function(p, d) {
+    .Call(`_odrr6_addMilliSeconds`, p, d)
+}
+
+addMicroSeconds <- function(p, d) {
+    .Call(`_odrr6_addMicroSeconds`, p, d)
+}
+
+addNanoSeconds <- function(p, d) {
+    .Call(`_odrr6_addNanoSeconds`, p, d)
+}
+
+getAddedPosixtime <- function(p, ptsexp) {
+    .Call(`_odrr6_getAddedPosixtime`, p, ptsexp)
+}
+
 newPt <- function() {
     .Call(`_odrr6_newPt`)
 }
