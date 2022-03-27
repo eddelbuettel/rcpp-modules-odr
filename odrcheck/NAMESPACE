@@ -1,0 +1,4 @@
+useDynLib(odrcheck, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")
+import(methods)
