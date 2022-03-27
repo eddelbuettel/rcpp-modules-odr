@@ -28,3 +28,9 @@ compiles and loads:
 
 but once `RcppBDTpt.cpp` and its header get added _as in RcppBDT_ or here if
 copied out of directory `HIDE` we have an issue.
+
+*Update:* Turns out I overlooked _one_ missing header to ensure
+consistency. But @enchufa2 came to the rescue [in this
+comment](https://github.com/RcppCore/Rcpp/issues/1207#issuecomment-1080017037)
+and all is well.  Package `odrr6` was still a fun exercise in _quickly_
+throwing together an R6 package around an external pointer from Rcpp.
