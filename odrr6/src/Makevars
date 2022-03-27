@@ -1,0 +1,2 @@
+CXX_STD = CXX11
+PKG_CPPFLAGS = -I. -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-parentheses
