@@ -508,6 +508,28 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// getDatetimePt
+Rcpp::Datetime getDatetimePt(Rcpp::XPtr<bdtPt> p);
+RcppExport SEXP _odrr6_getDatetimePt(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getDatetimePt(p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getDatePt
+Rcpp::Date getDatePt(Rcpp::XPtr<bdtPt> p);
+RcppExport SEXP _odrr6_getDatePt(SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::XPtr<bdtPt> >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(getDatePt(p));
+    return rcpp_result_gen;
+END_RCPP
+}
 // addHours
 Rcpp::XPtr<bdtPt> addHours(Rcpp::XPtr<bdtPt> p, int h);
 RcppExport SEXP _odrr6_addHours(SEXP pSEXP, SEXP hSEXP) {
@@ -601,6 +623,8 @@ static const R_CallMethodDef CallEntries[] = {
     {"_odrr6_setFromUTCInMicroSeconds", (DL_FUNC) &_odrr6_setFromUTCInMicroSeconds, 1},
     {"_odrr6_setFromDatetime", (DL_FUNC) &_odrr6_setFromDatetime, 2},
     {"_odrr6_setFromDouble", (DL_FUNC) &_odrr6_setFromDouble, 2},
+    {"_odrr6_getDatetimePt", (DL_FUNC) &_odrr6_getDatetimePt, 1},
+    {"_odrr6_getDatePt", (DL_FUNC) &_odrr6_getDatePt, 1},
     {"_odrr6_addHours", (DL_FUNC) &_odrr6_addHours, 2},
     {"_odrr6_addMinutes", (DL_FUNC) &_odrr6_addMinutes, 2},
     {"_odrr6_addSeconds", (DL_FUNC) &_odrr6_addSeconds, 2},

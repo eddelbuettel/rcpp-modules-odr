@@ -173,6 +173,14 @@ setFromDouble <- function(p, d) {
     .Call(`_odrr6_setFromDouble`, p, d)
 }
 
+getDatetimePt <- function(p) {
+    .Call(`_odrr6_getDatetimePt`, p)
+}
+
+getDatePt <- function(p) {
+    .Call(`_odrr6_getDatePt`, p)
+}
+
 addHours <- function(p, h) {
     .Call(`_odrr6_addHours`, p, h)
 }

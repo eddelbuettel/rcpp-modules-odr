@@ -77,11 +77,13 @@ Rcpp::XPtr<bdtPt> setFromDouble(Rcpp::XPtr<bdtPt> p, double d) {
     return p;
 }
 
-Rcpp::Datetime getDatetime(Rcpp::XPtr<bdtPt> p) {
+// [[Rcpp::export]]
+Rcpp::Datetime getDatetimePt(Rcpp::XPtr<bdtPt> p) {
     return p.get()->getDatetime();
 }
 
-Rcpp::Date getDate(Rcpp::XPtr<bdtPt> p) {
+// [[Rcpp::export]]
+Rcpp::Date getDatePt(Rcpp::XPtr<bdtPt> p) {
     return p.get()->getDate();
 }
 
